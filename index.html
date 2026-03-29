@@ -734,7 +734,7 @@ footer{background:var(--P-deep);color:rgba(255,255,255,.72);padding:52px 0}
           <p class="ssum" id="ssum"></p>
           <div class="prow">
             <button class="btn-s" onclick="window.print()">Print / Save PDF</button>
-            <a href="https://calendar.app.google/oJWyBP4Sk6qoVDoQ9" target="_blank" rel="noopener" class="btn-a">📅 Book Free Consultation →</a>
+            <button class="btn-a" onclick="document.getElementById('consult').scrollIntoView({behavior:'smooth'})">Book Free Consultation →</button>
           </div>
         </div>
       </div>
@@ -747,16 +747,11 @@ footer{background:var(--P-deep);color:rgba(255,255,255,.72);padding:52px 0}
       <div class="nsteps" id="consult">
         <div>
           <h3>Turn This Diagnosis Into Measurable Transformation</h3>
-          <p>Your BUSYness score identifies exactly where your organisation is bleeding capacity, talent, and competitive advantage. The Emerging Futures team converts these diagnoses into structured transformation programs with results visible within 90 days.</p>
-          <p style="margin-top:12px;font-size:15px;color:var(--g60)">To book your complimentary 30-minute strategic consultation, use the calendar link below or write directly to Manoj. No obligation — just clarity.</p>
-          <div style="display:flex;align-items:center;gap:10px;margin-top:18px;padding:14px 20px;background:var(--gray-05,#F5F5F5);border:1px solid var(--blt);border-left:3px solid var(--P)">
-            <span style="font-family:var(--font-m);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--g60);white-space:nowrap">Direct Email</span>
-            <a href="mailto:manoj@managementinnovations.co.in" style="font-family:var(--font-m);font-size:13px;color:var(--P);font-weight:500;word-break:break-all">manoj@managementinnovations.co.in</a>
-          </div>
+          <p>Your BUSYness score identifies exactly where your organisation is bleeding capacity, talent, and competitive advantage. The Emerging Futures team converts these diagnoses into structured transformation programs with results visible within 90 days. Book a complimentary 30-minute strategic consultation — no obligation.</p>
         </div>
         <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-end">
-          <a href="https://calendar.app.google/oJWyBP4Sk6qoVDoQ9" target="_blank" rel="noopener" class="btn-a" style="text-align:center;white-space:nowrap">📅 Book a Call — Pick Your Slot →</a>
-          <p style="font-family:var(--font-m);font-size:10px;color:var(--g40);letter-spacing:.1em;text-align:right;line-height:1.5">Opens Google Calendar · Free 30-min<br>No login required to book</p>
+          <a href="/cdn-cgi/l/email-protection#cba6aaa5a4a18ba6aaa5aaacaea6aea5bfa2a5a5a4bdaabfa2a4a5b8e5a8a4e5a2a5f4b8bea9a1aea8bff6899e9892a5aeb8b8eb8fa2aaaca5a4b8bfa2a8eb294b5feb88a4a5b8bea7bfaabfa2a4a5eb99aebabeaeb8bf" class="btn-a">Schedule Consultation →</a>
+          <a href="https://emergingfutures.co.in" class="btn-s">Visit emergingfutures.co.in</a>
         </div>
       </div>
     </div>
@@ -771,10 +766,7 @@ footer{background:var(--P-deep);color:rgba(255,255,255,.72);padding:52px 0}
         <div class="fn">Emerging Futures</div>
         <div class="fu">emergingfutures.co.in</div>
         <p>Organisational performance advisory. We help leadership teams convert BUSYness into strategic business momentum — with diagnostic rigour, structural precision, and measurable results.</p>
-        <p style="margin-top:14px"><a href="mailto:manoj@managementinnovations.co.in" style="color:#7EC8E3">manoj@managementinnovations.co.in</a></p>
-        <div style="margin-top:16px">
-          <a href="https://calendar.app.google/oJWyBP4Sk6qoVDoQ9" target="_blank" rel="noopener" style="display:inline-block;background:#C8102E;color:#fff;font-family:var(--font-m);font-size:10px;letter-spacing:.15em;text-transform:uppercase;padding:9px 16px;font-weight:600">📅 Book a Call →</a>
-        </div>
+        <p style="margin-top:14px"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1f727e7170755f727e717e787a727a716b76717170697e6b7670716c317c70317671">[email&#160;protected]</a></p>
       </div>
       <div class="fc">
         <h4>Services</h4>
@@ -813,7 +805,7 @@ footer{background:var(--P-deep);color:rgba(255,255,255,.72);padding:52px 0}
 <div class="toast" id="toast"></div>
 
 <!-- ═══════════════════ EMAILJS SDK ═════════════════ -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
 /* ════════════════════════════════════════════════════
@@ -1221,8 +1213,7 @@ function aDL() {
   a.click();
 }
 
-func
-tion aClear() {
+function aClear() {
   if (!confirm('Permanently delete all leads from local storage?\n\n(EmailJS emails sent to manoj@managementinnovations.co.in are unaffected.)')) return;
   localStorage.removeItem(LSKEY);
   aRender();
