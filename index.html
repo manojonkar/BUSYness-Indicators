@@ -79,8 +79,9 @@ nav{border-bottom:1px solid var(--bdr);position:sticky;top:0;background:rgba(255
 .hero{padding:76px 0 68px;border-bottom:1px solid var(--bdr)}
 .eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:32px}
 .eyebrow::after{content:'';flex:1;height:1px;background:var(--bdr);max-width:100px}
-.hero h1{font-family:var(--font-d);font-size:clamp(42px,6vw,74px);font-weight:600;color:var(--P-deep);line-height:1.05;letter-spacing:-.01em;margin-bottom:28px;max-width:840px}
+.hero h1{font-family:var(--font-d);font-size:clamp(36px,5vw,64px);font-weight:600;color:var(--P-deep);line-height:1.1;letter-spacing:-.02em;margin-bottom:40px;max-width:100%}
 .hero h1 em{font-style:italic;color:var(--A)}
+.hero-inner{display:grid;grid-template-columns:1fr 400px;gap:52px;align-items:start}
 .hero-lead{font-size:19px;font-weight:300;color:var(--g75);max-width:660px;line-height:1.78;margin-bottom:44px}
 .hero-lead strong{font-weight:600;color:var(--black)}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--bdr);margin-top:52px}
@@ -285,6 +286,7 @@ footer{background:var(--P-deep);color:rgba(255,255,255,.72);padding:52px 0}
   :root{--px:24px}
   .igrid,.bpgrid,.ggrid{grid-template-columns:1fr}
   .sh{grid-template-columns:1fr;gap:14px}
+  .hero-inner{grid-template-columns:1fr}
   .stats{grid-template-columns:1fr 1fr}
   .sc:nth-child(2){border-right:none}
   .sc:nth-child(3),.sc:nth-child(4){border-top:1px solid var(--bdr)}
@@ -350,10 +352,10 @@ footer{background:var(--P-deep);color:rgba(255,255,255,.72);padding:52px 0}
 <!-- ═══════════════════ HERO ════════════════════════ -->
 <section class="hero">
   <div class="wrap">
+    <div class="eyebrow"><span class="mono mono-a">Wake-Up Call Report · 2026 Edition</span></div>
+    <h1>Your Organization Is Not Failing from Lack of Effort. It Is Failing <em>Because</em> of It.</h1>
     <div class="hero-inner">
       <div>
-        <div class="eyebrow"><span class="mono mono-a">Wake-Up Call Report · 2026 Edition</span></div>
-        <h1>Your Organization Is Not Failing<br>from Lack of Effort.<br>It Is Failing <em>Because</em> of It.</h1>
         <p class="hero-lead"><strong>BUSYness</strong> — the chronic prioritization of activity over outcomes — is the single greatest destroyer of organizational value in the modern enterprise. This report identifies its ten most dangerous structural pathologies, provides evidence-grounded corrective frameworks, and includes a diagnostic assessment that benchmarks your organization and generates a personalized action plan.</p>
       </div>
       <div class="hero-img">
@@ -395,7 +397,7 @@ footer{background:var(--P-deep);color:rgba(255,255,255,.72);padding:52px 0}
           <rect x="16" y="413" width="388" height="40" rx="3" fill="rgba(5,10,22,0.9)"/><rect x="16" y="413" width="190" height="40" rx="3" fill="#0432A4"/>
           <text x="26" y="438" fill="rgba(255,255,255,0.65)" font-family="'DM Mono',monospace" font-size="10" letter-spacing="1">09</text>
           <text x="50" y="438" fill="rgba(255,255,255,0.82)" font-family="'DM Mono',monospace" font-size="14">Wrong Metrics</text>
-          <rect x="16" y="455" width="388" height="40" rx="3" fill="rgba(5,10,22,0.9)"/><rect x="16" y="455" width="170" height="40" rx="3" fill="#0040AA"/>
+          <rect x="16" y="455" width="388" height="40" rx="3" fill="rgba(5,10,22,0.9)"/><rect x="16" y="455" width="190" height="40" rx="3" fill="#0040AA"/>
           <text x="26" y="480" fill="rgba(255,255,255,0.65)" font-family="'DM Mono',monospace" font-size="10" letter-spacing="1">10</text>
           <text x="50" y="480" fill="rgba(255,255,255,0.78)" font-family="'DM Mono',monospace" font-size="14">No Feedback Loops</text>
         </svg>
@@ -530,8 +532,8 @@ footer{background:var(--P-deep);color:rgba(255,255,255,.72);padding:52px 0}
     </g>
     <rect width="1400" height="4" fill="url(#brcr2)"/>
     <text x="860" y="320" font-family="Georgia,serif" font-size="340" fill="rgba(255,255,255,0.018)" font-weight="700">20</text>
-    <text x="52" y="86"  fill="rgba(255,255,255,0.95)" font-family="Georgia,serif" font-size="38" font-weight="700" font-style="italic">20 Structural</text>
-    <text x="52" y="136" fill="rgba(255,255,255,0.95)" font-family="Georgia,serif" font-size="38" font-weight="700" font-style="italic">Best Practices</text>
+    <text x="52" y="86"  fill="rgba(255,255,255,0.95)" font-family="Georgia,serif" font-size="38" font-weight="700" font-style="italic">20 Best</text>
+    <text x="52" y="136" fill="rgba(255,255,255,0.95)" font-family="Georgia,serif" font-size="38" font-weight="700" font-style="italic">Practices</text>
     <rect x="52" y="148" width="240" height="2.5" fill="rgba(200,16,46,0.75)"/>
     <text x="52" y="178" fill="rgba(255,255,255,0.5)" font-family="'DM Mono',monospace" font-size="12" letter-spacing="3">FROM BUSYNESS TO BUSINESS</text>
     <text x="52" y="210" fill="rgba(255,255,255,0.3)" font-family="'DM Mono',monospace" font-size="11" letter-spacing="2">Emerging Futures · 2026</text>
@@ -666,7 +668,7 @@ footer{background:var(--P-deep);color:rgba(255,255,255,.72);padding:52px 0}
             <text x="350" y="156" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-family="'DM Mono',monospace" font-size="10" letter-spacing="2">PERFORMANCE TRAJECTORY</text>
             <rect x="0" y="178" width="700" height="42" fill="rgba(0,6,18,0.75)"/>
             <text x="350" y="199" text-anchor="middle" fill="rgba(255,255,255,0.88)" font-family="'DM Mono',monospace" font-size="12" letter-spacing="2" font-weight="500">30-MIN FREE STRATEGIC CONSULTATION</text>
-            <text x="350" y="216" text-anchor="middle" fill="rgba(240,100,100,0.85)" font-family="'DM Mono',monospace" font-size="11" letter-spacing="1.5">manoj@managementinnovations.co.in</text>
+            <text x="350" y="216" text-anchor="middle" fill="rgba(240,100,100,0.85)" font-family="'DM Mono',monospace" font-size="11" letter-spacing="1.5">manoj&#64;managementinnovations&#46;co&#46;in</text>
           </svg>
         </div>
         <ul class="lglist">
@@ -734,7 +736,7 @@ footer{background:var(--P-deep);color:rgba(255,255,255,.72);padding:52px 0}
           <p class="ssum" id="ssum"></p>
           <div class="prow">
             <button class="btn-s" onclick="window.print()">Print / Save PDF</button>
-            <button class="btn-a" onclick="document.getElementById('consult').scrollIntoView({behavior:'smooth'})">Book Free Consultation →</button>
+            <a href="https://calendar.app.google/oJWyBP4Sk6qoVDoQ9" target="_blank" rel="noopener" class="btn-a">📅 Book Free Consultation →</a>
           </div>
         </div>
       </div>
@@ -747,11 +749,16 @@ footer{background:var(--P-deep);color:rgba(255,255,255,.72);padding:52px 0}
       <div class="nsteps" id="consult">
         <div>
           <h3>Turn This Diagnosis Into Measurable Transformation</h3>
-          <p>Your BUSYness score identifies exactly where your organisation is bleeding capacity, talent, and competitive advantage. The Emerging Futures team converts these diagnoses into structured transformation programs with results visible within 90 days. Book a complimentary 30-minute strategic consultation — no obligation.</p>
+          <p>Your BUSYness score identifies exactly where your organisation is bleeding capacity, talent, and competitive advantage. The Emerging Futures team converts these diagnoses into structured transformation programs with results visible within 90 days.</p>
+          <p style="margin-top:12px;font-size:15px;color:var(--g60)">To book your complimentary 30-minute strategic consultation, use the calendar link below or write directly to Manoj. No obligation — just clarity.</p>
+          <div style="display:flex;align-items:center;gap:10px;margin-top:18px;padding:14px 20px;background:var(--gray-05,#F5F5F5);border:1px solid var(--blt);border-left:3px solid var(--P)">
+            <span style="font-family:var(--font-m);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--g60);white-space:nowrap">Direct Email</span>
+            <a href="mailto:manoj&#64;managementinnovations&#46;co&#46;in" style="color:inherit">manoj&#64;managementinnovations&#46;co&#46;in</a>
+          </div>
         </div>
         <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-end">
-          <a href="/cdn-cgi/l/email-protection#cba6aaa5a4a18ba6aaa5aaacaea6aea5bfa2a5a5a4bdaabfa2a4a5b8e5a8a4e5a2a5f4b8bea9a1aea8bff6899e9892a5aeb8b8eb8fa2aaaca5a4b8bfa2a8eb294b5feb88a4a5b8bea7bfaabfa2a4a5eb99aebabeaeb8bf" class="btn-a">Schedule Consultation →</a>
-          <a href="https://emergingfutures.co.in" class="btn-s">Visit emergingfutures.co.in</a>
+          <a href="https://calendar.app.google/oJWyBP4Sk6qoVDoQ9" target="_blank" rel="noopener" class="btn-a" style="text-align:center;white-space:nowrap">📅 Book a Call — Pick Your Slot →</a>
+          <p style="font-family:var(--font-m);font-size:10px;color:var(--g40);letter-spacing:.1em;text-align:right;line-height:1.5">Opens Google Calendar · Free 30-min<br>No login required to book</p>
         </div>
       </div>
     </div>
@@ -766,7 +773,10 @@ footer{background:var(--P-deep);color:rgba(255,255,255,.72);padding:52px 0}
         <div class="fn">Emerging Futures</div>
         <div class="fu">emergingfutures.co.in</div>
         <p>Organisational performance advisory. We help leadership teams convert BUSYness into strategic business momentum — with diagnostic rigour, structural precision, and measurable results.</p>
-        <p style="margin-top:14px"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1f727e7170755f727e717e787a727a716b76717170697e6b7670716c317c70317671">[email&#160;protected]</a></p>
+        <p style="margin-top:14px"><a href="mailto:manoj&#64;managementinnovations&#46;co&#46;in" style="color:inherit">manoj&#64;managementinnovations&#46;co&#46;in</a></p>
+        <div style="margin-top:16px">
+          <a href="https://calendar.app.google/oJWyBP4Sk6qoVDoQ9" target="_blank" rel="noopener" style="display:inline-block;background:#C8102E;color:#fff;font-family:var(--font-m);font-size:10px;letter-spacing:.15em;text-transform:uppercase;padding:9px 16px;font-weight:600">📅 Book a Call →</a>
+        </div>
       </div>
       <div class="fc">
         <h4>Services</h4>
@@ -804,63 +814,31 @@ footer{background:var(--P-deep);color:rgba(255,255,255,.72);padding:52px 0}
 
 <div class="toast" id="toast"></div>
 
-<!-- ═══════════════════ EMAILJS SDK ═════════════════ -->
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
+<!-- ═══════════════════ SCRIPTS ═════════════════════ -->
 <script>
-/* ════════════════════════════════════════════════════
-   ★  CONFIGURATION — EDIT THESE BEFORE GOING LIVE  ★
-   ════════════════════════════════════════════════════
-
-   EmailJS Setup (free — 200 emails/month):
-   1. Sign up at https://emailjs.com
-   2. Dashboard → Email Services → Add Service
-      → Connect Gmail/Outlook for manoj@managementinnovations.co.in
-      → Copy the Service ID → paste into EJSVC below
-   3. Dashboard → Email Templates → Create New
-      Subject line:  New BUSYness Lead: {{company}} — {{total}}/50 ({{band}})
-      Body (plain text or HTML):
-      ───────────────────────────────────────
-      Name:          {{lead_name}}
-      Email:         {{lead_email}}
-      Organisation:  {{company}}
-      Role:          {{role}}
-      Org Size:      {{orgsize}}
-      Score:         {{total}} / 50
-      Band:          {{band}}
-      Submitted:     {{ts}}
-
-      Score Breakdown:
-      {{scores}}
-      ───────────────────────────────────────
-      Set Reply-To field to:  {{lead_email}}
-      → Copy the Template ID → paste into EJTPL below
-   4. Dashboard → Account → General → Public Key
-      → paste into EJKEY below
-
-   Admin Panel:
-   Visit yourpage.html?admin=1 in any browser.
-   Enter the password set in ADMINPW below.
-   Leads are also stored in localStorage — download as CSV anytime.
-════════════════════════════════════════════════════ */
-
-const EJSVC   = 'YOUR_SERVICE_ID';    // ← EmailJS Service ID
-const EJTPL   = 'YOUR_TEMPLATE_ID';   // ← EmailJS Template ID
-const EJKEY   = 'YOUR_PUBLIC_KEY';    // ← EmailJS Public Key
-const ADMINPW = 'EF@Manoj2025';       // ← change before going live
+/* ────────────────────────────────────────────────────
+   LEAD CAPTURE — HOW TO ACTIVATE FORMSPREE (2 mins)
+   1. Go to https://formspree.io  and sign up FREE
+      using manoj@managementinnovations.co.in
+   2. Click "New Form" — name it "BUSYness Leads"
+   3. Copy the 8-character Form ID shown (e.g. xpwzabcd)
+   4. In this file, find  FORMSPREE_ID = 'YOUR_FORM_ID'
+      and replace  YOUR_FORM_ID  with your actual ID
+   5. Every form submission will then email you instantly
+   UNTIL THEN: the mailto fallback opens your email client
+   ADMIN PANEL: add ?admin=1 to the URL · pwd: EF@Manoj2025
+──────────────────────────────────────────────────── */
+const ADMINPW = 'EF@Manoj2025';
 const LSKEY   = 'ef_leads_v1';
 
-/* Init EmailJS */
-if (typeof emailjs !== 'undefined') emailjs.init({ publicKey: EJKEY });
-
-/* ── Theme ──────────────────────────────────────── */
+/* ── Theme switcher ── */
 function setTheme(name, btn) {
   document.documentElement.setAttribute('data-theme', name);
   document.querySelectorAll('.tbtn').forEach(b => b.classList.remove('on'));
   btn.classList.add('on');
 }
 
-/* ── Assessment data ────────────────────────────── */
+/* ── Assessment indicators ── */
 const IND = [
   {id:1,  label:'Priority Architecture'},
   {id:2,  label:'Initiative Portfolio'},
@@ -875,80 +853,57 @@ const IND = [
 ];
 
 const BANDS = {
-  critical: {
-    label:'CRITICAL — BUSYness Crisis', cls:'bc',
-    color:'#B00020',
+  critical:{label:'CRITICAL — BUSYness Crisis',cls:'bc',color:'#B00020',
     headline:'Your Organisation Is in Active BUSYness Crisis',
-    summary:'Your score indicates that <strong>BUSYness pathologies are operating at systemic scale</strong>. Multiple high-severity failure modes are compounding each other. Immediate structural intervention is not a competitive recommendation — it is an existential requirement. The risk of continued performance erosion, talent departure, and strategic irrelevance is elevated and accelerating.'
-  },
-  high: {
-    label:'HIGH — Significant Pathology', cls:'bh',
-    color:'#C05000',
+    summary:'Your score indicates that <strong>BUSYness pathologies are operating at systemic scale</strong>. Multiple high-severity failure modes are compounding each other. Immediate structural intervention is not a competitive recommendation — it is an existential requirement.'},
+  high:{label:'HIGH — Significant Pathology',cls:'bh',color:'#C05000',
     headline:'Significant BUSYness Pathology Across Multiple Areas',
-    summary:'Your score reveals <strong>several structural failure modes actively suppressing organisational performance</strong>. These are not edge cases — they are patterns embedded in how your organisation operates. A structured 90-day intervention targeting your highest-severity indicators can recover substantial productive capacity within the current quarter.'
-  },
-  moderate: {
-    label:'MODERATE — BUSYness Emerging', cls:'bm',
-    color:'#8A6A00',
+    summary:'Your score reveals <strong>several structural failure modes actively suppressing organisational performance</strong>. A structured 90-day intervention targeting your highest-severity indicators can recover substantial productive capacity within the current quarter.'},
+  moderate:{label:'MODERATE — BUSYness Emerging',cls:'bm',color:'#8A6A00',
     headline:'BUSYness Patterns Are Emerging — Intervention Is Timely',
-    summary:'Your organisation shows <strong>moderate BUSYness symptoms across several indicators</strong>. These patterns are manageable now but tend to entrench rapidly as headcount and complexity increase. Targeted structural interventions in your highest-risk areas will prevent escalation.'
-  },
-  low: {
-    label:'LOW — BUSYness Largely Contained', cls:'bl',
-    color:'#1E6E38',
+    summary:'Your organisation shows <strong>moderate BUSYness symptoms across several indicators</strong>. These patterns are manageable now but tend to entrench rapidly as headcount and complexity increase. Targeted structural interventions will prevent escalation.'},
+  low:{label:'LOW — BUSYness Largely Contained',cls:'bl',color:'#1E6E38',
     headline:'Strong Foundations — Optimisation Opportunities Remain',
-    summary:'Your organisation demonstrates <strong>strong operational discipline</strong>. The lower-severity indicators represent optimisation opportunities rather than structural risks. Sustaining this level as the organisation scales requires conscious governance and periodic reassessment.'
-  },
-  minimal: {
-    label:'MINIMAL — High-Performance Operations', cls:'bn',
-    color:'var(--P)',
+    summary:'Your organisation demonstrates <strong>strong operational discipline</strong>. The lower-severity indicators represent optimisation opportunities rather than structural risks. Sustaining this level as the organisation scales requires conscious governance.'},
+  minimal:{label:'MINIMAL — High-Performance Operations',cls:'bn',color:'#002B5B',
     headline:'Exemplary Operational Health',
-    summary:'Your organisation scores in the <strong>top tier for operational clarity and execution discipline</strong>. BUSYness pathologies are well-managed across all ten indicators. The primary risk at this level is complacency — maintaining performance as the organisation grows requires formalised governance to prevent regression.'
-  }
+    summary:'Your organisation scores in the <strong>top tier for operational clarity and execution discipline</strong>. BUSYness pathologies are well-managed across all ten indicators. The primary risk at this level is complacency.'}
 };
 
 const ACT = {
-  1:  ['Audit every active project against top 3 OKRs — suspend non-aligned immediately',
-       'Publish a single-page strategy brief readable in 90 seconds, cascade org-wide'],
-  2:  ['Count active initiatives — mandate 50% reduction this quarter',
-       'Establish time-stamped backlog with quarterly review cadence'],
-  3:  ['Cancel all recurring meetings lacking a clear decision output',
-       'Implement org-wide 2-hr protected focus blocks starting Monday'],
-  4:  ['Deploy notification architecture audit — eliminate all non-essential alerts',
-       'Implement deep work first policy — no comms tools before primary task'],
-  5:  ['Remove all input-based metrics from current performance review cycle',
-       'CEO-level written declaration: hours and presence are not performance signals'],
-  6:  ['Implement NFR model — redefine all delegations with outcome + deadline + trigger',
-       'Shift all status updates to weekly written outcomes reports'],
-  7:  ['Map all duplicated work across functions — consolidate immediately',
-       'Introduce shared KPIs between top 3 interdependent team pairs'],
-  8:  ['Run emergency skills matrix audit vs. current strategic priorities',
-       'Map top 3 skill gaps to OKR dependencies — assign development plans'],
-  9:  ['Identify top 5 input-based metrics currently in use — retire within 60 days',
-       'Implement BP Score (Outcomes ÷ Effort) as the headline executive metric'],
-  10: ['Implement monthly root-cause audits — block all symptom-only fixes',
-       'Measure reactive vs. proactive work ratio by team — alarm at 50% reactive']
+  1: ['Audit every active project against top 3 OKRs — suspend non-aligned immediately','Publish a single-page strategy brief readable in 90 seconds, cascade org-wide'],
+  2: ['Count active initiatives — mandate 50% reduction this quarter','Establish time-stamped backlog with quarterly review cadence'],
+  3: ['Cancel all recurring meetings lacking a clear decision output','Implement org-wide 2-hr protected focus blocks starting Monday'],
+  4: ['Deploy notification architecture audit — eliminate all non-essential alerts','Implement deep work first policy — no comms tools before primary task'],
+  5: ['Remove all input-based metrics from current performance review cycle','CEO-level written declaration: hours and presence are not performance signals'],
+  6: ['Implement NFR model — redefine all delegations with outcome + deadline + trigger','Shift all status updates to weekly written outcomes reports'],
+  7: ['Map all duplicated work across functions — consolidate immediately','Introduce shared KPIs between top 3 interdependent team pairs'],
+  8: ['Run emergency skills matrix audit vs. current strategic priorities','Map top 3 skill gaps to OKR dependencies — assign development plans'],
+  9: ['Identify top 5 input-based metrics currently in use — retire within 60 days','Implement BP Score (Outcomes divided by Effort) as the headline executive metric'],
+  10:['Implement monthly root-cause audits — block all symptom-only fixes','Measure reactive vs. proactive work ratio by team — alarm at 50% reactive']
 };
 
-/* ── Progress ────────────────────────────────────── */
+/* ── Progress bar ── */
 const answered = new Set();
-document.querySelectorAll('input[type="radio"]').forEach(r => {
+document.querySelectorAll('input[type="radio"]').forEach(function(r) {
   r.addEventListener('change', function() {
-    answered.add(+this.name.replace('q',''));
-    const pct = (answered.size / 10) * 100;
+    answered.add(parseInt(this.name.replace('q','')));
+    var pct = (answered.size / 10) * 100;
     document.getElementById('progFill').style.width = pct + '%';
     document.getElementById('progCt').textContent = answered.size + ' / 10';
     if (answered.size > 0) document.getElementById('prog').classList.add('show');
   });
 });
 
-/* ── Validation clear-on-type ────────────────────── */
-document.querySelectorAll('.fg input, .fg select').forEach(el => {
-  el.addEventListener('input', () => el.closest('.fg').classList.remove('fe'));
+/* ── Clear validation on input ── */
+document.querySelectorAll('.fg input, .fg select').forEach(function(el) {
+  el.addEventListener('input', function() {
+    this.closest('.fg').classList.remove('fe');
+  });
 });
 
-/* ── Form Submit ─────────────────────────────────── */
-document.getElementById('leadForm').addEventListener('submit', async function(e) {
+/* ── Form submit ── */
+document.getElementById('leadForm').addEventListener('submit', function(e) {
   e.preventDefault();
 
   if (answered.size < 10) {
@@ -957,264 +912,303 @@ document.getElementById('leadForm').addEventListener('submit', async function(e)
     return;
   }
 
-  /* Validate */
-  let ok = true;
-  [['fname','fg-fn'],['lname','fg-ln'],['email','fg-em'],['company','fg-co'],['jobtitle','fg-ti']].forEach(([fid,gid]) => {
-    const v = document.getElementById(fid).value.trim();
-    const pass = fid === 'email' ? v && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) : v !== '';
+  /* Validate required fields */
+  var ok = true;
+  var fields = [['fname','fg-fn'],['lname','fg-ln'],['email','fg-em'],['company','fg-co'],['jobtitle','fg-ti']];
+  fields.forEach(function(pair) {
+    var fid = pair[0], gid = pair[1];
+    var v = document.getElementById(fid).value.trim();
+    var pass = fid === 'email' ? (v && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) : v !== '';
     document.getElementById(gid).classList.toggle('fe', !pass);
     if (!pass) ok = false;
   });
   if (!ok) return;
+
   if (!document.getElementById('cbox').checked) {
     showToast('Please tick the consent box to receive your report.');
     return;
   }
 
-  /* Collect */
-  let total = 0;
-  const scores = {};
-  IND.forEach(i => {
-    const sel = document.querySelector(`input[name="q${i.id}"]:checked`);
-    const v = sel ? +sel.value : 1;
-    scores[i.id] = v; total += v;
+  /* Collect scores */
+  var total = 0;
+  var scores = {};
+  IND.forEach(function(ind) {
+    var sel = document.querySelector('input[name="q' + ind.id + '"]:checked');
+    var v = sel ? parseInt(sel.value) : 1;
+    scores[ind.id] = v;
+    total += v;
   });
 
-  const fname   = document.getElementById('fname').value.trim();
-  const lname   = document.getElementById('lname').value.trim();
-  const email   = document.getElementById('email').value.trim();
-  const company = document.getElementById('company').value.trim();
-  const role    = document.getElementById('jobtitle').value.trim();
-  const orgsize = document.getElementById('orgsize').value || 'Not specified';
-  const band    = total >= 40 ? 'critical' : total >= 30 ? 'high' : total >= 20 ? 'moderate' : total >= 10 ? 'low' : 'minimal';
-  const ts      = new Date().toLocaleString('en-IN', {timeZone:'Asia/Kolkata',dateStyle:'medium',timeStyle:'short'});
-  const scoreStr = IND.map(i => `${i.label}: ${scores[i.id]}/5`).join('\n');
+  var fname   = document.getElementById('fname').value.trim();
+  var lname   = document.getElementById('lname').value.trim();
+  var email   = document.getElementById('email').value.trim();
+  var company = document.getElementById('company').value.trim();
+  var role    = document.getElementById('jobtitle').value.trim();
+  var orgsize = document.getElementById('orgsize').value || 'Not specified';
+  var band    = total >= 40 ? 'critical' : total >= 30 ? 'high' : total >= 20 ? 'moderate' : total >= 10 ? 'low' : 'minimal';
+  var ts      = new Date().toLocaleString();
+  var scoreStr = IND.map(function(i){ return i.label + ': ' + scores[i.id] + '/5'; }).join(', ');
+  var lead    = {fname:fname,lname:lname,email:email,company:company,role:role,orgsize:orgsize,total:total,band:band.toUpperCase(),scores:JSON.stringify(scores),ts:ts};
 
-  const lead = {fname, lname, email, company, role, orgsize, total, band: band.toUpperCase(), scores: JSON.stringify(scores), ts};
-
-  /* 1 — localStorage backup */
+  /* Save to localStorage */
   try {
-    const arr = JSON.parse(localStorage.getItem(LSKEY) || '[]');
+    var arr = JSON.parse(localStorage.getItem(LSKEY) || '[]');
     arr.push(lead);
     localStorage.setItem(LSKEY, JSON.stringify(arr));
   } catch(err) { console.warn('localStorage fail:', err); }
 
-  /* 2 — EmailJS */
-  const btn = document.getElementById('submitBtn');
-  btn.textContent = 'Generating…';
+  /* Disable button */
+  var btn = document.getElementById('submitBtn');
+  btn.textContent = 'Generating your report...';
   btn.disabled = true;
 
-  if (EJSVC !== 'YOUR_SERVICE_ID') {
-    try {
-      await emailjs.send(EJSVC, EJTPL, {
-        lead_name:  `${fname} ${lname}`,
-        lead_email: email,
-        company, role, orgsize,
-        total:      `${total}`,
-        band:       band.toUpperCase(),
-        scores:     scoreStr,
-        ts
-      });
-    } catch(err) { console.warn('EmailJS error (lead saved locally):', err); }
+  /* ── LEAD DELIVERY — THREE LAYERS ───────────────────────────────────
+     Layer 1: Formspree (primary — works once you sign up at formspree.io)
+              Sign up FREE at https://formspree.io using manoj@managementinnovations.co.in
+              Create a form → copy the 8-char ID → paste below replacing YOUR_FORM_ID
+              e.g. if your form URL is formspree.io/f/xpwzabcd  → paste  xpwzabcd
+     Layer 2: Mailto fallback — opens your email client with all lead data pre-filled
+              Works RIGHT NOW with zero setup. You will see a new email draft.
+     Layer 3: localStorage admin panel — visit the page with ?admin=1
+  ── ─────────────────────────────────────────────────────────────────── */
+
+  var FORMSPREE_ID = 'YOUR_FORM_ID'; /* ← paste your Formspree ID here */
+
+  var bodyText = 'NEW BUSYNESS DIAGNOSTIC LEAD\n'
+    + '==============================\n'
+    + 'Name:         ' + fname + ' ' + lname + '\n'
+    + 'Email:        ' + email + '\n'
+    + 'Organisation: ' + company + '\n'
+    + 'Role:         ' + role + '\n'
+    + 'Org Size:     ' + orgsize + '\n'
+    + 'Score:        ' + total + '/50\n'
+    + 'Band:         ' + band.toUpperCase() + '\n'
+    + 'Submitted:    ' + ts + '\n\n'
+    + 'SCORE BREAKDOWN\n' + scoreStr;
+
+  var subjectText = 'BUSYness Lead: ' + company + ' — ' + total + '/50 (' + band.toUpperCase() + ')';
+
+  /* Layer 1: Formspree */
+  if (FORMSPREE_ID !== 'YOUR_FORM_ID') {
+    var formData = new FormData();
+    formData.append('_subject',  subjectText);
+    formData.append('_replyto',  email);
+    formData.append('Name',      fname + ' ' + lname);
+    formData.append('Email',     email);
+    formData.append('Organisation', company);
+    formData.append('Role',      role);
+    formData.append('Org Size',  orgsize);
+    formData.append('Score',     total + '/50');
+    formData.append('Band',      band.toUpperCase());
+    formData.append('Scores',    scoreStr);
+    formData.append('Submitted', ts);
+    fetch('https://formspree.io/f/' + FORMSPREE_ID, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    }).catch(function(err){ console.warn('Formspree error:', err); });
+  } else {
+    /* Layer 2: Mailto fallback — opens email client with lead data */
+    var mailtoLink = 'mailto:manoj@managementinnovations.co.in'
+      + '?subject=' + encodeURIComponent(subjectText)
+      + '&body=' + encodeURIComponent(bodyText);
+    var mailWin = window.open(mailtoLink, '_blank');
+    /* If browser blocks the window, try direct location change */
+    if (!mailWin) { window.location.href = mailtoLink; }
   }
 
+  /* Render report immediately */
   renderResults(fname, lname, company, role, scores, total, band);
-  btn.textContent = '✓ Report Generated — Scroll Down';
+  btn.textContent = 'Report Generated — Scroll Down';
   showToast('Your report is ready. Scroll down to view it.');
 });
 
-/* ── Render Results ──────────────────────────────── */
+/* ── Render results ── */
 function renderResults(fname, lname, company, role, scores, total, bandKey) {
-  const bd = BANDS[bandKey];
+  var bd = BANDS[bandKey];
 
   /* Score circle */
-  const circ = document.getElementById('scoreCircle');
-  circ.style.borderColor = bd.color;
+  document.getElementById('scoreCircle').style.borderColor = bd.color;
   document.getElementById('scoreNum').textContent = total;
   document.getElementById('scoreNum').style.color = bd.color;
-  document.getElementById('scoreBand').innerHTML = `<span class="sband ${bd.cls}">${bd.label}</span>`;
+  document.getElementById('scoreBand').innerHTML = '<span class="sband ' + bd.cls + '">' + bd.label + '</span>';
 
-  /* Headline */
-  document.getElementById('recip').textContent = `${fname} ${lname} · ${role} · ${company}`;
+  /* Headline text */
+  document.getElementById('recip').textContent = fname + ' ' + lname + ' \u00B7 ' + role + ' \u00B7 ' + company;
   document.getElementById('shead').textContent = bd.headline;
   document.getElementById('ssum').innerHTML = bd.summary;
 
-  /* Breakdown */
-  const sorted = IND.map(i => ({...i, score: scores[i.id]})).sort((a,b) => b.score - a.score);
-  const bd_el = document.getElementById('sbreakdown');
-  bd_el.innerHTML = '';
-  sorted.forEach(ind => {
-    const pct = (ind.score / 5) * 100;
-    const col = ind.score >= 4 ? '#B00020' : ind.score === 3 ? '#C05000' : ind.score === 2 ? '#8A6A00' : '#1E6E38';
-    const row = document.createElement('div');
+  /* Score breakdown bars */
+  var sorted = IND.map(function(i){ return {id:i.id, label:i.label, score:scores[i.id]}; });
+  sorted.sort(function(a,b){ return b.score - a.score; });
+
+  var bkel = document.getElementById('sbreakdown');
+  bkel.innerHTML = '';
+  sorted.forEach(function(ind) {
+    var pct = (ind.score / 5) * 100;
+    var col = ind.score >= 4 ? '#B00020' : ind.score === 3 ? '#C05000' : ind.score === 2 ? '#8A6A00' : '#1E6E38';
+    var row = document.createElement('div');
     row.className = 'sbr';
-    row.innerHTML = `<div class="sblbl">${ind.label}</div><div class="sbtrack"><div class="sbbar" style="width:0%;background:${col}" data-w="${pct}"></div></div><div class="sbsc" style="color:${col}">${ind.score}/5</div>`;
-    bd_el.appendChild(row);
+    row.innerHTML = '<div class="sblbl">' + ind.label + '</div>'
+      + '<div class="sbtrack"><div class="sbbar" style="width:0%;background:' + col + '" data-w="' + pct + '"></div></div>'
+      + '<div class="sbsc" style="color:' + col + '">' + ind.score + '/5</div>';
+    bkel.appendChild(row);
   });
-  setTimeout(() => document.querySelectorAll('.sbbar[data-w]').forEach(b => b.style.width = b.dataset.w + '%'), 150);
+  setTimeout(function(){
+    document.querySelectorAll('.sbbar[data-w]').forEach(function(b){ b.style.width = b.dataset.w + '%'; });
+  }, 150);
 
   /* Guidance cards */
-  const top3    = sorted.slice(0, 3);
-  const strong3 = sorted.slice(-3).reverse();
-  const gg = document.getElementById('ggrid');
+  var top3    = sorted.slice(0, 3);
+  var strong3 = sorted.slice(-3).reverse();
+  var gg = document.getElementById('ggrid');
   gg.innerHTML = '';
 
-  const c1 = document.createElement('div');
+  var c1 = document.createElement('div');
   c1.className = 'gc pri';
-  c1.innerHTML = `<div class="mono" style="color:rgba(255,255,255,.3);margin-bottom:6px">Immediate Priority Actions</div><h3>Your 3 Critical Interventions</h3><ul>${top3.map(i => `<li>${ACT[i.id][0]}</li>`).join('')}</ul>`;
+  c1.innerHTML = '<div class="mono" style="color:rgba(255,255,255,.3);margin-bottom:6px">Immediate Priority Actions</div>'
+    + '<h3>Your 3 Critical Interventions</h3><ul>'
+    + top3.map(function(i){ return '<li>' + ACT[i.id][0] + '</li>'; }).join('')
+    + '</ul>';
   gg.appendChild(c1);
 
-  const c2 = document.createElement('div');
+  var c2 = document.createElement('div');
   c2.className = 'gc';
-  c2.innerHTML = `<div class="mono mono-p" style="margin-bottom:6px">90-Day Structural Changes</div><h3>What to Build This Quarter</h3><ul>${top3.map(i => `<li>${ACT[i.id][1]}</li>`).join('')}</ul>`;
+  c2.innerHTML = '<div class="mono mono-p" style="margin-bottom:6px">90-Day Structural Changes</div>'
+    + '<h3>What to Build This Quarter</h3><ul>'
+    + top3.map(function(i){ return '<li>' + ACT[i.id][1] + '</li>'; }).join('')
+    + '</ul>';
   gg.appendChild(c2);
 
-  const c3 = document.createElement('div');
+  var c3 = document.createElement('div');
   c3.className = 'gc';
-  c3.innerHTML = `<div class="mono" style="color:var(--gold);margin-bottom:6px">Strengths to Protect</div><h3>Your Well-Managed Areas</h3><ul>${strong3.map(i => `<li>${i.label} — maintain governance discipline as the organisation scales</li>`).join('')}</ul>`;
+  c3.innerHTML = '<div class="mono" style="color:var(--gold);margin-bottom:6px">Strengths to Protect</div>'
+    + '<h3>Your Well-Managed Areas</h3><ul>'
+    + strong3.map(function(i){ return '<li>' + i.label + ' \u2014 maintain governance discipline as the organisation scales</li>'; }).join('')
+    + '</ul>';
   gg.appendChild(c3);
 
-  /* Recovery */
-  const rp = Math.min(Math.round(((total - 10) / 40) * 62), 62);
+  /* Recovery potential estimate */
+  var rp = Math.min(Math.round(((total - 10) / 40) * 62), 62);
   if (rp > 5) {
-    document.getElementById('recovBar').innerHTML = `<div class="rbar"><div class="rnum">${rp}%</div><div class="rtxt"><h4>Estimated Productivity Recovery Potential</h4><p>Based on your score profile and research benchmarks, targeted structural interventions across your highest-severity indicators can recover an estimated <strong>${rp}% of currently suppressed organisational productivity</strong> — without adding headcount or technology spend.</p></div></div>`;
+    document.getElementById('recovBar').innerHTML =
+      '<div class="rbar"><div class="rnum">' + rp + '%</div>'
+      + '<div class="rtxt"><h4>Estimated Productivity Recovery Potential</h4>'
+      + '<p>Based on your score profile and research benchmarks, targeted structural interventions across your highest-severity indicators can recover an estimated <strong>' + rp + '% of currently suppressed organisational productivity</strong> — without adding headcount or technology spend.</p></div></div>';
   }
 
+  /* Show results section */
   document.getElementById('results').classList.add('show');
-  setTimeout(() => document.getElementById('results').scrollIntoView({behavior:'smooth'}), 200);
+  setTimeout(function(){
+    document.getElementById('results').scrollIntoView({behavior:'smooth'});
+  }, 200);
 }
 
-/* ── Toast ───────────────────────────────────────── */
+/* ── Toast notification ── */
 function showToast(msg) {
-  const t = document.getElementById('toast');
+  var t = document.getElementById('toast');
   t.textContent = msg;
   t.classList.add('show');
-  setTimeout(() => t.classList.remove('show'), 4000);
+  setTimeout(function(){ t.classList.remove('show'); }, 4000);
 }
 
-/* ════════════════════════════════════════════════════
-   ADMIN PANEL  —  access via ?admin=1 in the URL
-   e.g.  emergingfutures.co.in/diagnostic?admin=1
-════════════════════════════════════════════════════ */
+/* ════════════════════════════════
+   ADMIN PANEL — visit ?admin=1
+════════════════════════════════ */
 (function() {
-  if (!location.search.includes('admin=1')) return;
+  if (location.search.indexOf('admin=1') === -1) return;
 
-  /* Inject styles */
-  document.head.insertAdjacentHTML('beforeend', `<style>
-    #ao{position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px}
-    #ab{background:#fff;width:100%;max-width:1040px;max-height:92vh;display:flex;flex-direction:column;overflow:hidden;font-family:'DM Sans',sans-serif;box-shadow:0 24px 80px rgba(0,0,0,.45)}
-    #ah{background:#001530;color:#fff;padding:22px 32px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
-    #ah .t{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700}
-    #ah .s{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:5px}
-    #ahclose{background:transparent;border:1px solid rgba(255,255,255,.25);color:rgba(255,255,255,.7);padding:6px 14px;cursor:pointer;font-size:13px;font-family:'DM Sans',sans-serif}
-    #aa{padding:40px 32px}
-    #aa p{font-size:15px;color:#404040;margin-bottom:16px}
-    #apwr{display:flex;gap:10px}
-    #apw{border:1px solid #C8C8C8;padding:11px 14px;font-size:15px;width:260px;outline:none;font-family:'DM Sans',sans-serif}
-    #apw:focus{border-color:#002B5B}
-    #aun{background:#002B5B;color:#fff;border:none;padding:11px 22px;font-size:14px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif}
-    #aun:hover{background:#001530}
-    #aperr{color:#B00020;font-size:12px;margin-top:8px;display:none;font-family:'DM Mono',monospace}
-    #ac{display:none;flex:1;overflow:auto;flex-direction:column}
-    #atb{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:16px 32px;border-bottom:1px solid #E0E0E0;background:#F2F2F2;flex-shrink:0}
-    #alc{font-family:'DM Mono',monospace;font-size:11px;color:#5A5A5A;letter-spacing:.12em;text-transform:uppercase}
-    .abtn{background:#002B5B;color:#fff;border:none;padding:8px 18px;font-size:13px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;letter-spacing:.04em}
-    .abtn:hover{background:#001530}
-    .agbtn{background:transparent;border:1px solid #C8C8C8;color:#5A5A5A;padding:8px 14px;font-size:12px;cursor:pointer;font-family:'DM Sans',sans-serif}
-    .agbtn:hover{border-color:#B00020;color:#B00020}
-    #atw{overflow-x:auto;padding:0 32px 32px}
-    .atbl{width:100%;border-collapse:collapse;font-size:13px;margin-top:16px}
-    .atbl th{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:#5A5A5A;border-bottom:2px solid #002B5B;padding:8px 12px;text-align:left;white-space:nowrap}
-    .atbl td{padding:10px 12px;border-bottom:1px solid #E8E8E8;vertical-align:top;color:#2E2E2E}
-    .atbl tr:hover td{background:#F7F9FC}
-    .chip{font-family:'DM Mono',monospace;font-size:10px;font-weight:600;letter-spacing:.08em;padding:3px 8px;white-space:nowrap}
-    .cCRITICAL{background:#FFF0EE;color:#B00020;border:1px solid #B00020}
-    .cHIGH{background:#FFF4E8;color:#C05000;border:1px solid #C05000}
-    .cMODERATE{background:#FFFAE0;color:#8A6A00;border:1px solid #8A6A00}
-    .cLOW{background:#EAF6EE;color:#1E6E38;border:1px solid #1E6E38}
-    .cMINIMAL{background:#EAF0F7;color:#002B5B;border:1px solid #002B5B}
-    .aempty{padding:32px;color:#808080;font-size:15px}
-  </style>`);
+  var style = document.createElement('style');
+  style.textContent = '#ao{position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px}'
+    +'#ab{background:#fff;width:100%;max-width:1040px;max-height:92vh;display:flex;flex-direction:column;overflow:hidden;font-family:sans-serif;box-shadow:0 24px 80px rgba(0,0,0,.45)}'
+    +'#ah{background:#001530;color:#fff;padding:22px 32px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}'
+    +'#ah .t{font-size:20px;font-weight:700}'
+    +'#aa{padding:40px 32px}'
+    +'#aa p{font-size:15px;color:#404040;margin-bottom:16px}'
+    +'#apwr{display:flex;gap:10px}'
+    +'#apw{border:1px solid #C8C8C8;padding:11px 14px;font-size:15px;width:260px;outline:none}'
+    +'#aun{background:#002B5B;color:#fff;border:none;padding:11px 22px;font-size:14px;font-weight:600;cursor:pointer}'
+    +'#aperr{color:#B00020;font-size:12px;margin-top:8px;display:none}'
+    +'#ac{display:none;flex:1;overflow:auto;flex-direction:column}'
+    +'#atb{display:flex;gap:10px;align-items:center;padding:16px 32px;border-bottom:1px solid #eee;background:#f7f7f7;flex-shrink:0}'
+    +'#alc{font-size:12px;color:#555;letter-spacing:.1em;text-transform:uppercase}'
+    +'.abtn{background:#002B5B;color:#fff;border:none;padding:8px 18px;font-size:13px;font-weight:600;cursor:pointer}'
+    +'.agbtn{background:transparent;border:1px solid #ccc;color:#555;padding:8px 14px;font-size:12px;cursor:pointer}'
+    +'#atw{overflow-x:auto;padding:0 32px 32px}'
+    +'.atbl{width:100%;border-collapse:collapse;font-size:13px;margin-top:16px}'
+    +'.atbl th{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:#555;border-bottom:2px solid #002B5B;padding:8px 12px;text-align:left}'
+    +'.atbl td{padding:10px 12px;border-bottom:1px solid #eee;color:#222}';
+  document.head.appendChild(style);
 
-  /* Build overlay */
-  document.body.insertAdjacentHTML('beforeend', `
-    <div id="ao">
-      <div id="ab">
-        <div id="ah">
-          <div><div class="s">Emerging Futures · Lead Dashboard</div><div class="t">BUSYness Diagnostic — Lead Manager</div></div>
-          <button id="ahclose" onclick="document.getElementById('ao').remove()">✕ Close</button>
-        </div>
-        <div id="aa">
-          <p>Enter your admin password to access captured leads.</p>
-          <div id="apwr">
-            <input type="password" id="apw" placeholder="Admin password">
-            <button id="aun" onclick="aPwCheck()">Unlock →</button>
-          </div>
-          <p id="aperr">Incorrect password. Please try again.</p>
-        </div>
-        <div id="ac">
-          <div id="atb">
-            <span id="alc"></span>
-            <button class="abtn" onclick="aDL()" style="margin-left:auto">↓ Download CSV</button>
-            <button class="agbtn" onclick="aRender()">↻ Refresh</button>
-            <button class="agbtn" onclick="aClear()">🗑 Clear All</button>
-          </div>
-          <div id="atw"><div id="atable"></div></div>
-        </div>
-      </div>
-    </div>`);
-
-  document.getElementById('apw').addEventListener('keydown', e => { if (e.key === 'Enter') aPwCheck(); });
+  var overlay = document.createElement('div');
+  overlay.id = 'ao';
+  overlay.innerHTML = '<div id="ab">'
+    +'<div id="ah"><div class="t">BUSYness Diagnostic — Lead Manager</div>'
+    +'<button style="background:transparent;border:1px solid rgba(255,255,255,.3);color:rgba(255,255,255,.7);padding:6px 14px;cursor:pointer;font-size:13px" onclick="document.getElementById(\'ao\').remove()">Close</button></div>'
+    +'<div id="aa"><p>Enter admin password to access captured leads.</p>'
+    +'<div id="apwr"><input type="password" id="apw" placeholder="Admin password">'
+    +'<button id="aun" onclick="aPwCheck()">Unlock</button></div>'
+    +'<p id="aperr">Incorrect password.</p></div>'
+    +'<div id="ac"><div id="atb"><span id="alc"></span>'
+    +'<button class="abtn" onclick="aDL()" style="margin-left:auto">Download CSV</button>'
+    +'<button class="agbtn" onclick="aRender()">Refresh</button>'
+    +'<button class="agbtn" onclick="aClear()">Clear All</button></div>'
+    +'<div id="atw"><div id="atable"></div></div></div></div>';
+  document.body.appendChild(overlay);
+  document.getElementById('apw').addEventListener('keydown', function(e){ if(e.key==='Enter') aPwCheck(); });
 })();
 
 function aPwCheck() {
   if (document.getElementById('apw').value === ADMINPW) {
     document.getElementById('aa').style.display = 'none';
-    const ac = document.getElementById('ac');
+    var ac = document.getElementById('ac');
     ac.style.display = 'flex';
     aRender();
   } else {
     document.getElementById('aperr').style.display = 'block';
-    document.getElementById('apw').style.borderColor = '#B00020';
   }
 }
 
 function aRender() {
-  const leads = JSON.parse(localStorage.getItem(LSKEY) || '[]');
-  document.getElementById('alc').textContent = `${leads.length} lead${leads.length !== 1 ? 's' : ''} captured`;
-  const tbl = document.getElementById('atable');
-  if (leads.length === 0) {
-    tbl.innerHTML = `<div class="aempty">No leads captured yet. Submissions will appear here in real time. All leads are also sent to <strong>manoj@managementinnovations.co.in</strong> via EmailJS.</div>`;
+  var leads = JSON.parse(localStorage.getItem(LSKEY) || '[]');
+  document.getElementById('alc').textContent = leads.length + ' lead' + (leads.length !== 1 ? 's' : '') + ' captured';
+  var tbl = document.getElementById('atable');
+  if (!leads.length) {
+    tbl.innerHTML = '<p style="padding:24px;color:#888">No leads yet. Submissions appear here after form completion.</p>';
     return;
   }
-  const rows = [...leads].reverse();
-  tbl.innerHTML = `<table class="atbl">
-    <thead><tr><th>Timestamp</th><th>First Name</th><th>Last Name</th><th>Email</th><th>Organisation</th><th>Role</th><th>Org Size</th><th>Score</th><th>Band</th></tr></thead>
-    <tbody>${rows.map(l => `<tr>
-      <td style="white-space:nowrap;color:#5A5A5A;font-family:'DM Mono',monospace;font-size:11px">${l.ts||'—'}</td>
-      <td>${l.fname||'—'}</td><td>${l.lname||'—'}</td>
-      <td><a href="mailto:${l.email}" style="color:#002B5B;text-decoration:underline">${l.email||'—'}</a></td>
-      <td><strong>${l.company||'—'}</strong></td><td>${l.role||'—'}</td><td>${l.orgsize||'—'}</td>
-      <td style="font-family:'DM Mono',monospace;font-weight:600">${l.total}/50</td>
-      <td><span class="chip c${l.band}">${l.band}</span></td>
-    </tr>`).join('')}</tbody>
-  </table>`;
+  var rows = leads.slice().reverse();
+  var html = '<table class="atbl"><thead><tr><th>Time</th><th>Name</th><th>Email</th><th>Organisation</th><th>Role</th><th>Size</th><th>Score</th><th>Band</th></tr></thead><tbody>';
+  rows.forEach(function(l) {
+    html += '<tr><td style="white-space:nowrap;color:#888;font-size:11px">' + (l.ts||'') + '</td>'
+      + '<td>' + (l.fname||'') + ' ' + (l.lname||'') + '</td>'
+      + '<td><a href="mailto:' + (l.email||'') + '" style="color:#002B5B">' + (l.email||'') + '</a></td>'
+      + '<td><strong>' + (l.company||'') + '</strong></td>'
+      + '<td>' + (l.role||'') + '</td>'
+      + '<td>' + (l.orgsize||'') + '</td>'
+      + '<td style="font-weight:600">' + (l.total||'') + '/50</td>'
+      + '<td>' + (l.band||'') + '</td></tr>';
+  });
+  html += '</tbody></table>';
+  tbl.innerHTML = html;
 }
 
 function aDL() {
-  const leads = JSON.parse(localStorage.getItem(LSKEY) || '[]');
+  var leads = JSON.parse(localStorage.getItem(LSKEY) || '[]');
   if (!leads.length) { showToast('No leads to download yet.'); return; }
-  const hdr = ['Timestamp','First Name','Last Name','Email','Organisation','Role','Org Size','Score','Band'];
-  const rows = leads.map(l => [l.ts, l.fname, l.lname, l.email, l.company, l.role, l.orgsize, l.total, l.band]);
-  const csv = [hdr, ...rows].map(r => r.map(v => `"${String(v||'').replace(/"/g,'""')}"`).join(',')).join('\n');
-  const a = document.createElement('a');
+  var hdr = ['Time','First Name','Last Name','Email','Organisation','Role','Org Size','Score','Band'];
+  var rows = leads.map(function(l){ return [l.ts,l.fname,l.lname,l.email,l.company,l.role,l.orgsize,l.total,l.band]; });
+  var csv = [hdr].concat(rows).map(function(r){
+    return r.map(function(v){ return '"' + String(v||'').replace(/"/g,'""') + '"'; }).join(',');
+  }).join('\n');
+  var a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob([csv], {type:'text/csv'}));
-  a.download = `EF_BUSYness_Leads_${new Date().toISOString().slice(0,10)}.csv`;
+  a.download = 'EF_Leads_' + new Date.toISOString().slice(0,10) + '.csv';
   a.click();
 }
 
 function aClear() {
-  if (!confirm('Permanently delete all leads from local storage?\n\n(EmailJS emails sent to manoj@managementinnovations.co.in are unaffected.)')) return;
+  if (!confirm('Delete all leads from local storage? EmailJS emails are unaffected.')) return;
   localStorage.removeItem(LSKEY);
   aRender();
 }
